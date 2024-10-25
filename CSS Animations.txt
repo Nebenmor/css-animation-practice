@@ -1,0 +1,5 @@
+There are 2 ways of creating animations in CSS: Transitions.. And animations.
+
+Transitions wait until a change in a property occurs and then allows those changes to take place over time. Without a transition, any changes in a property would take effect immediately. Transitions should be used when properties are changed interactively so for example, in CSS, a property can change when hovered on and when focused on.
+
+Animations however, provide keyframes for more control over the animation and allows us to create complex animations on a frame by frame basis. Use animations when you want to create complex animations that just work without having to wait for properties that change interactively.
