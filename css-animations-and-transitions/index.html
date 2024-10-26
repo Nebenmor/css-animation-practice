@@ -12,14 +12,14 @@
 
         body {
             background: gray;
+            font-size: 2rem;
         }
 
          html {
             font-size: 62.5%;
         }
 
-        section {
-            height: 100vh;
+        .button-section {
             width: 100%;
             display: flex;
             justify-content: center;
@@ -27,9 +27,9 @@
         }
 
         .button {
+            margin-top: 5rem;
             padding: 2rem 3rem;
             border: .2rem solid #000000;
-            font-size: 2rem;
             border-radius: .5rem;
             text-decoration: none;
             background: #000000;
@@ -53,12 +53,49 @@
             transform: translateY(-10px);
         }
 
+        
+        /* CSS Animations */
+
+        .hello {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            
+            /* animation-name: slideInLeft;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: both; */
+
+            
+           
+
+            animation: slideInLeft 1s ease-in;
+
+        }
+        
+
+        @keyframes slideInLeft {
+            from {
+                transform: translateX(-300px);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
 
     </style>
 </head>
 <body>
     <section>
-        <a href="#" class="button">Button</a>
+        <div class="button-section">
+            <a href="#" class="button">Button</a>
+        </div>
+        <h1 class="hello">Hello World</h1>
     </section>
     
 </body>
