@@ -101,7 +101,7 @@
             Default values: iteration-count = 1, timing-function = ease, direction = normal, delay = 0s
             Note: Timing function must be minimum of 1s else the animation will not run
             */
-            
+
         /* Animations */
         @keyframes slideInLeft {
             from {
@@ -152,7 +152,28 @@
             transform-origin: top left;
         }
 
-        
+        /* Bounce animation */
+        @keyframes bounce {
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-30px);
+            }
+
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .bounce {
+            animation-name: bounce;
+        }
            
         
         
@@ -168,7 +189,11 @@
         <h1 class="animate animate--fast slideInLeft flex-center">Hello World</h1>
         <h2 class="animate animate--slow slideInLeft flex-center">A Test</h2>
         <div class="button-section" >
-                    <h3 class="animate animate--infinite animate--slow rotate">Another Test</h3>
+            <h3 class="animate animate--infinite animate--slow rotate">Another Test</h3>
+        </div>
+
+        <div class="button-section">
+            <h3 class="animate animate--infinite animate--slow bounce">Bounce</h3>
         </div>
     </section>
     
